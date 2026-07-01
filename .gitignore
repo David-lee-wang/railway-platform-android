@@ -1,0 +1,35 @@
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Build outputs
+/app/build/
+/build/
+/local.properties
+
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Chaquopy
+*.chaquopy/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Env
+.env

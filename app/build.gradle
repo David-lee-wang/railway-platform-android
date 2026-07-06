@@ -34,10 +34,6 @@ android {
 }
 
 chaquopy {
-    defaultConfig {
-        version = "3.8"
-    }
-
     pip {
         install "flask==3.0.0"
         install "flask-sqlalchemy==3.1.1"
@@ -47,7 +43,7 @@ chaquopy {
 
     sourceSets {
         main {
-            srcDirs "../python/app"
+            srcDirs = ["../python/app"]
         }
     }
 }

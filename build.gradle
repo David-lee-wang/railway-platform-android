@@ -6,7 +6,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "com.chaquo:gradle:15.0.1"
+        classpath "com.chaquo.python:gradle:15.0.1"
     }
 }
 

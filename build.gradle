@@ -1,15 +1,4 @@
 // Top-level build file
-buildscript {
-    repositories {
-        maven { url "https://chaquo.com/maven" }
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath "com.chaquo.python:gradle:15.0.1"
-    }
-}
-
 plugins {
     id 'com.android.application' version '8.2.0' apply false
 }

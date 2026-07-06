@@ -2,23 +2,15 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://chaquo.com/maven" }
         gradlePluginPortal()
     }
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "com.chaquo.python") {
-                useModule("com.chaquo:gradle:15.0.1")
-            }
-        }
-    }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url "https://chaquo.com/maven" }
     }
 }
 

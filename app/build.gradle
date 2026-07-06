@@ -34,11 +34,13 @@ android {
 }
 
 chaquopy {
-    pip {
-        install "flask==3.0.0"
-        install "flask-sqlalchemy==3.1.1"
-        install "flask-login==0.6.3"
-        install "werkzeug==3.0.1"
+    defaultConfig {
+        pip {
+            install "flask==3.0.0"
+            install "flask-sqlalchemy==3.1.1"
+            install "flask-login==0.6.3"
+            install "werkzeug==3.0.1"
+        }
     }
 
     sourceSets {

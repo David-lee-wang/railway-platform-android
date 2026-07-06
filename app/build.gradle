@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application'
-    id 'com.chaquo.python'
 }
+
+apply plugin: 'com.chaquo.python'
 
 android {
     namespace 'com.railway.platform'

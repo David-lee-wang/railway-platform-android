@@ -8,7 +8,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == "com.chaquo.python") {
-                useVersion("14.0.0")
+                useModule("com.chaquo:gradle:15.0.1")
             }
         }
     }

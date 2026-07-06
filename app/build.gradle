@@ -14,6 +14,8 @@ android {
         versionCode 1
         versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        pythonVersion "3.8"
     }
 
     buildTypes {
@@ -30,10 +32,6 @@ android {
 }
 
 chaquopy {
-    python {
-        version = "3.8"
-    }
-
     pip {
         install "flask==3.0.0"
         install "flask-sqlalchemy==3.1.1"
@@ -41,9 +39,11 @@ chaquopy {
         install "werkzeug==3.0.1"
     }
 
-    srcSets {
+    sourceSets {
         main {
-            python.srcDir = "../python/app"
+            python {
+                srcDirs = ["../python/app"]
+            }
         }
     }
 }
